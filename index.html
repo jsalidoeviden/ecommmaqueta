@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Compras Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <div id="header" class="header">
+        <div class="logo">Ecom Demo</div>
+    </div>
+
+    <!-- Login -->
+    <div id="login-section" class="login-container">
+        <h2 class="login-header">Iniciar sesión</h2>
+        <form id="login-form">
+            <div class="input-container">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-container">
+                <input type="password" id="password" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="login-button">Iniciar sesión</button>
+        </form>
+        <div id="error-message" class="error-message"></div>
+    </div>
+
+    <!-- Productos -->
+    <div id="products-section" class="products-section" style="display:none;">
+        <h2 class="products-header">Productos</h2>
+        <div id="products-list" class="products-list">
+            <!-- Aquí aparecerán los productos -->
+        </div>
+        <button id="go-to-cart-btn" class="go-to-cart-btn">Ir al Carrito (<span id="cart-count">0</span>)</button>
+        <button id="logout-btn" class="logout-btn">Cerrar sesión</button>
+    </div>
+
+    <!-- Carrito -->
+    <div id="cart-section" class="cart-section" style="display:none;">
+        <h2 class="cart-header">Carrito</h2>
+        <div id="cart-items" class="cart-items">
+            <!-- Aquí aparecerán los productos añadidos al carrito -->
+        </div>
+        <button id="checkout-btn" class="checkout-btn">Realizar Compra</button>
+        <button id="back-to-products-btn" class="back-to-products-btn">Volver a Productos</button>
+        <button id="logout-btn-cart" class="logout-btn">Cerrar sesión</button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
